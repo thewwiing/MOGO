@@ -1,126 +1,649 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Mogo</title>
-  </head>
-  <body>
+body{
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+  color:#333;
+  line-height: 1.6;
+  margin:0;
+}
+
+*,
+*:before, *:after{
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+hr{
+  border:0;
+  background-color: #e5e5e5;
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin:40px 0;
+}
+/* Container */
+.container{
+  width:100%;
+  max-width: 1200px;
+  margin:0 auto;
+}
+.container.a{
+  margin-top: 30px;
+}
 
 
 
-    <header class="header">
-      <div class="container">
-        <div class="header-inner">
-          <div class="header--logo">Mogo</div>
-          <nav class="nav">
-            <a class="nav__link active" href="#">About</a>
-            <a class="nav__link" href="#">Service</a>
-            <a class="nav__link" href="#">Work</a>
-            <a class="nav__link" href="#">Blog</a>
-            <a class="nav__link" href="#">Contract</a>
-
-          </nav>
-        </div>
-      </div>
-    </header>
-    <div class="intro">
-      <div class="container a">
-        <div class="intro-inner">
-          <h2 class="intro-suptitle">Creative template</h2>
-          <h1 class="intro-title">Welcome to MoGo</h1>
-          <a href="#" class="btn">Learn more</a>
-        </div>
-      </div>
-      <div class="slider">
-        <div class="container">
-          <div class="slider-inner">
-            <div class="slider-item active"><span class="slider-num">01</span> INTRO</div>
-            <div class="slider-item"><span class="slider-num">02</span> WORK</div>
-            <div class="slider-item"><span class="slider-num">03</span> ABOUT</div>
-            <div class="slider-item"><span class="slider-num">04</span> CONTACTS</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-  <section class="section">
-    <div class="container">
-
-
-      <div class="section-header">
-        <h3 class="section-suptitle">What we do</h3>
-        <h2 class="section-title">Story about us</h2>
-        <div class="section-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Veniam consequatur ut cupiditate eum illum ratione vitae amet
-            consequuntur quam? Officia explicabo debitis, dignissimos hic
-            laborum, cum earum pariatur asperiores maxime.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="about">
-        <div class="about-item">
-          <div class="about-img">
-            <img src="assets/images/about/1.jpg" alt="">
-          </div>
-          <div class="about-text">SUPER TEAM</div>
-        </div>
-        <div class="about-item">
-          <div class="about-img">
-            <img src="assets/images/about/2.jpg" alt="">
-          </div>
-          <div class="about-text">SUPER TEAM</div>
-        </div>
-        <div class="about-item">
-          <div class="about-img">
-            <img src="assets/images/about/3.jpg" alt="">
-          </div>
-          <div class="about-text">SUPER TEAM</div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-
-  <div class="statistics">
-    <div class="container">
-
-      <div class="stat">
-        <div class="stat-item">
-          <div class="stat-count">42</div>
-          <div class="stat-text">WEB DESIGN PROJECT</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-count">102</div>
-          <div class="stat-text">HAPPY CLIENT</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-count">14</div>
-          <div class="stat-text">AWARD WINNER</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-count">99</div>
-          <div class="stat-text">CUP OF COFFEE</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-count">22</div>
-          <div class="stat-text">MEMBERS</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+/* Intro */
+.intro{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width:100%;
+  height: 100vh;
+  background: url("../images/b11.jpg") center no-repeat;
+  -webkit- background-size: cover;
+  background-size: cover;
+}
+.intro-inner{
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  font-weight: 700;
+}
+.intro-suptitle{
+  font-size: 72px;
+  color: white;
+  font-family: 'Caushan Script',cursive;
+  margin-bottom: 15px;
+}
+.intro-title{
+  color: #fff;
+  font-size: 130px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+.intro-title:after{
+  display: block;
+  content: "";
+  height: 3px;
+  width: 60px;
+  background-color: #fff;
+  margin:30px auto 60px;
+}
 
 
 
 
-  </body>
-</html>
+/* Header */
+header{
+  padding-top: 30px;
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  z-index: 1000;
+}
+.header--logo{
+  font-size: 30px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #fff;
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+/* Navigation */
+.nav{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.nav__link{
+  display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+nav a.active{
+  color:#fce38a;
+}
+nav a.active:after{
+  opacity: 1;
+}
+.nav__link:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    background-color: #fce38a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+.nav__link:hover{
+  color:#fce38a;
+}
+.nav__link:hover:after{
+  opacity: 1;
+  color:#fce38a;
+}
+
+
+
+
+/* Buttons */
+.btn{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  border:3px solid #fff;
+  padding: 8px 30px;
+  transition: background .1s linear, color .1s linear;
+}
+.btn:hover{
+  background-color: #fff;
+  color:#000;
+}
+
+
+
+
+/* Slider */
+.slider{
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.slider-item{
+  position: relative;
+  opacity: .7;
+  font-size: 18px;
+  width: 24%;
+  left: 0px;
+  padding: 20px 0px;
+  border-top: 3px solid #fff;
+}
+.slider-item.active{
+  opacity: 1;
+}
+.slider-inner{
+  display: flex;
+  justify-content: space-between;
+
+}
+.slider-item.active:before{
+  content: "";
+  display: block;
+  width:70px;
+  height: 3px;
+  position: absolute;
+  top:-3px;
+  left:0;
+  z-index: 1;
+  background-color:#f38181;
+}
+.slider-num{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+
+/* Section */
+.section {
+  padding: 80px 0;
+}
+.section-header{
+  text-align: center;
+  width: 100%;
+  max-width: 950px;
+  margin: 0px auto 50px;
+}
+.section-suptitle{
+  font-size: 24px;
+  color: #333;
+  font-family: 'Kaushan Script',cursive;
+}
+.section-title{
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+.section-title:after{
+  display: block;
+  content: "";
+  width:60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 30px auto;
+}
+.section-text{
+  color: #999;
+  font-size: 15px;
+}
+.section-devices{
+  padding-bottom: 0px;
+  margin-bottom: 40px;
+  background: url('../images/devices-bg.jpg') center no-repeat;
+  -webkit- background-size: cover;
+  background-size: cover;
+}
+.section-gray{
+  background-color: #f8f8f8;
+}
+.section-clients{
+  background: url('../images/clients-bg.jpg') center no-repeat;
+  background-color: #f5f5f5;
+}
+/*  */
+.card{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.card-item{
+  width: 380px;
+}
+.card-inner{
+  background-color: #95e1d3;
+  position: relative;
+}
+.card-img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+.card-item:hover .card-img img{
+  opacity: .1;
+}
+.card-item:hover .card-img{
+  transform: translate3d(-10px,-10px,0);
+
+}
+.card-img img{
+  display: block;
+  transition: opacity .2s linear;
+}
+.card-text{
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  color:#fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  top: 50%;
+  left:0;
+  z-index: 2;
+  transform: translate3d(0,-50%,0);
+  transition: opacity .1s linear;
+}
+.card-item:hover .card-text{
+  opacity: 1;
+}
+.card-info{
+  margin-top:20px;
+  text-align: center;
+}
+.card-name{
+  color:#333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.card-prof{
+  color: #999;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Statistics */
+.statistics{
+  background-color: #95e1d3;
+}
+.stat{
+  display: flex;
+  justify-content: center;
+}
+.stat-item{
+  flex: 1 1 0;
+  border-left:1px solid #b5eae0;
+  text-align: center;
+  color:#fff;
+  padding: 70px 25px;
+}
+.stat-item:last-child{
+  border-right: 1px solid #b5eae0;
+}
+.stat-count{
+  font-size: 72px;
+  font-weight: bold;
+}
+.state-text{
+  font-size: 14px;
+}
+
+
+/* Services */
+.services{
+  display: flex;
+}
+.services-item{
+  flex: 1 1 0;
+  padding-left: 85px;
+  padding-right: 35px;
+  position: relative;
+}
+.services-icon{
+  position: absolute;
+  top:0;
+  left: 28px;
+  z-index: 1;
+}
+.services-title{
+  font-size: 14px;
+  color:#333;
+  margin-bottom: 10px;
+}
+.services-text{
+  font-size: 15px;
+  color:#999;
+}
+
+
+/* Devices */
+.devices{
+  width:100%;
+  max-width: 600px;
+  margin:0 auto;
+  position: relative;
+}
+.devices-item{
+  display: block;
+}
+.iphone{
+    position: absolute;
+    bottom:-80px;
+    right:0;
+    z-index: 1;
+}
+
+/* We do */
+
+.wedo{
+  display: flex;
+}
+.wedo-item{
+  width: 50%;
+}
+
+/* Accordion */
+.accordion-item{
+  border:1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+.accordion-item:active .accordion-header{
+  border-bottom-color: #e5e5e5;
+}
+.accordion-item.active .accordion-content{
+  display: block;
+}
+.accordion-item.active .accordion-header:after{
+  margin-top: 5px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.accordion-header{
+  padding: 15px 20px 15px 65px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+  border: 1px solid transparent;
+  cursor:pointer;
+}
+.accordion-header:after{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  top:50%;
+  right:20px;
+  z-index: 1;
+  transform: translateY(-50%) rotate(135deg);
+}
+.accordion-title{
+  font-size: 14px;
+  color:#333;
+}
+.accordion-content{
+  display: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #999;
+  font-style:italic;
+  font-weight: 300;
+}
+.accordion-icon{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+
+/* Reviews */
+.reviews{
+  padding: 0 110px;
+  position: relative;
+}
+.reviews-item{
+  padding-left: 255px;
+  position: relative;
+}
+.reviews-icon{
+  border: 2px solid #95e1d3;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.reviews-text{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  color:#999;
+  margin-bottom: 15px;
+}
+.reviews-author{
+  font-size: 24px;
+  color: #333;
+  font-family: 'Kaushan Script';
+}
+.reviews-author:before{
+  display: inline-block;
+  content: "";
+  height: 3px;
+  background-color: #f38181;
+  vertical-align: middle;
+  top:0;
+  width:60px;
+  margin-right: 10px;
+}
+.reviews-btn{
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top:50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+.reviews-btn:after{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+}
+.reviews-btn-prev{
+  transform: rotate(-45deg);
+  left: 0;
+}
+.reviews-btn-next{
+  transform: rotate(135deg);
+  right:0;
+}
+
+/* Social */
+.social{
+  display: flex;
+  justify-content: center;
+}
+.social-item{
+  width: 55px;
+  height: 55px;
+  background-color: #fce38a;
+  border-right: 1px solid #f38181;
+  text-decoration: none;
+  color: #f38181;
+  font-size: 30px;
+  padding: 12px 10px;
+  line-height: 1;
+  transition: color .1s linear, background .1s linear;
+}
+.social-item:last-child{
+  border-right: 0;
+}
+.social-item:hover{
+  background-color: #f38181;
+  color: #fff;
+}
+
+
+
+/* Logos */
+.logos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Works */
+.works{
+  display: flex;
+  width: 100%;
+}
+.works-col{
+  flex: 1 1 0;
+}
+.works-item{
+  background: linear-gradient(to bottom,#f38181,#fce38a);
+  position: relative;
+}
+.works-item:hover .works-img{
+  opacity: .1;
+}
+.works-item:hover .works-info{
+  opacity: 1;
+}
+.works-img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: opacity .2s linear;
+}
+.works-info{
+  text-align: center;
+  color:#fff;
+  width: 100%;
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translate3d(0,-50%,0);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .2s linear;
+}
+.works-title{
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.works-text{
+  font-size: 15px;
+  font-style: italic;
+  font-weight:300;
+}
+
+
+/* Clients */
+
+.clients{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+
+}
+.clients-item{
+  width: 50%;
+  padding: 0 45px 0 175px;
+  position: relative;
+  margin-bottom: 60px;
+}
+.clients-photo{
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  z-index: 1;
+}
+.clients_name{
+  font-size: 14px;
+  color: #333;
+  margin-bottom:5px;
+}
+.clients-prof{
+  font-size: 15px;
+  color:#333;
+  font-style:italic;
+  font-weight: 300;
+}
+.clients-text{
+  font-size: 15px;
+  color: #999;
+}
+.clients-text:before{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 15px 0;
+}
