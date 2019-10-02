@@ -1,2 +1,2 @@
 # MOGO
-https://thewwiing.github.io/MOGO/
+https://thewwiing.github.io/mogo--landing/
